@@ -1,0 +1,20 @@
+{
+    "extensions": {
+      "sourcegraph/code-stats-insights": true,
+      "sourcegraph/search-insights": true,
+      "sourcegraph/open-in-vscode": true,
+      "sourcegraph/codecov": true,
+    },
+    "vscode.open.basePath": "/Users/shawnking/repos/",
+    "codecov.decorations.lineCoverage": false,
+    "codeStatsInsights.insight.languageUsage": {
+      "title": "Language Usage",
+      "repository": "github.com/sourcegraph/sourcegraph",
+      "otherThreshold": 0.03    
+    },
+    "experimentalFeatures": {
+      "codeInsights": true
+    },
+    "git.blame.decorations": "file",
+    "search.contextLines": 3
+  }
