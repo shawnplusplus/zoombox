@@ -37,15 +37,19 @@
 //     incrementer++;
 // }
 
-var numbers = [];
-numbers[0] = 0;
-numbers[1] = 1;
+// var numbers = [];
+// numbers[0] = 0;
+// numbers[1] = 1;
 
 
-function adding(_mem1, _mem2)
-{
-    var sum = 0;
-    sum = _mem1 + _mem2;
+// function adding(_mem1, _mem2)
+// {
+//     var sum = 0;
+//     sum = _mem1 + _mem2;
     
-}
-adding(1, 2, 3);
+// }
+// adding(1, 2, 3);
+
+var listItems = []
+listItems = document.getElementsByTagName("li");
+alert(listItems.length);
