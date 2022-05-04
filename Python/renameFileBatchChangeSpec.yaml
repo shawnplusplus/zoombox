@@ -1,0 +1,19 @@
+name: rename-file-with-python
+description: This batch changes uses a python script to rename a file
+
+# Find all repositories that contain a README.md file.
+on:
+  - repositoriesMatchingQuery: repo:^github\.com/shawnplusplus/* batch change<
+
+# In each repository, run this command. Each repository's resulting diff is captured.
+steps:
+  - run: python3 renameFile.py
+    container: python-rename
+
+# Describe the changeset (e.g., GitHub pull request) you want for each repository.
+changesetTemplate:
+  title: rename python
+  body: renames a file using a python script
+  branch: rename-using-python
+  commit:
+    message: Renames a file using a python script
